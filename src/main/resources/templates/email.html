@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+<meta charset="UTF-8">
+<title>Correo de Bienvenida - Serenity</title>
+<style>
+    body {
+        font-family: Arial, sans-serif;
+        background-color: #f7f7f7;
+        margin: 0;
+        padding: 0;
+    }
+    .container {
+        width: 80%;
+        max-width: 800px;
+        margin: 0 auto;
+        padding: 20px;
+        background-color: #fff;
+        border-radius: 5px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    }
+    h1 {
+        color: #333;
+        text-align: center;
+    }
+    p {
+        color: #666;
+        font-size: 16px;
+        line-height: 1.6;
+        margin-bottom: 15px;
+    }
+</style>
+</head>
+<body>
+<div class="container">
+    <h1>Bienvenido a Serenity</h1>
+    <p>Estimado/a</p><p th:text="${mensaje}"></p>
+    <p>¡Nos complace darle la bienvenida a nuestra plataforma!</p>
+    <p>Nuestra aplicación fusiona la tecnología GPT con la gestión de documentos PDF, ofreciendo un conjunto de herramientas inteligentes para optimizar su experiencia.</p>
+    <p>Al subir un PDF, nuestra tecnología procesa el contenido para extraer información relevante. Podrá interactuar con esta información de diversas maneras: realizar consultas, resumir el contenido, o incluso generar ideas creativas basadas en el texto.</p>
+    <p>Estamos emocionados de tenerlo/a a bordo y esperamos que aproveche al máximo nuestra plataforma.</p>
+    <p>¡Bienvenido/a al futuro de la gestión documental!</p>
+    <p>Atentamente,</p>
+    <p>El equipo de Serenity</p>
+</div>
+</body>
+</html>
+
